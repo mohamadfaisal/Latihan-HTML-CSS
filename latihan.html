@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Konstruksi Pemilihan IF THEN</title>
+    </head>
+    <body>
+        <h1>Konstruksi Pemilihan if then</h1>
+        <h2>HITUNG GAJI PEGAWAI</h2>
+        <script>
+            //buat variabel
+            var namapegawai, jammasuk, jamkeluar, jamlembur
+            var jamkerja, gapok, lembur
+
+            //inisialisasi variabel
+            jamkerja = 8
+            gapok = 10000
+            lembur = 2000
+            gaji = 0
+
+            //input data pegawai dan jam kerja
+            namapegawai = prompt("Nama Pegawai ")
+            jammasuk = prompt(" Jam Masuk : ", "08.00")
+            jamkeluar = prompt("Jam Keluar : ", "16.00")
+            jamlembur = jamkeluar - eval(jammasuk) - eval(jamkerja)
+            gaji = gapok
+
+            //itung lembur
+            if(jamlembur > 0) gaji = gaji + jamlembur + lembur
+
+            //tampilkan hasil
+            document.write(" Nama Pegawai = "+namapegawai)
+            document.write(" <br />Jam Masuk : "+jammasuk)
+            document.write(" <br />Jam Keluar : "+jamkeluar)
+            document.write(" <br />Lembur : "+jamlembur +" jam")
+            document.write(" <br />Gaji : "+gaji)
+        </script>
+    </body>
+</html>

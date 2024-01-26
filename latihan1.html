@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KONSTRUKSI PEMILIHAN IF THEN ELSE</title>
+    </head>
+    <body>
+        <h1>KONSTRUKSI PEMILIHAN IF THEN ELSE</h1>
+        <h2>Penentuan bilangan</h2>
+        <script>
+            //deklarasi variabel
+            var bil, jenis
+            
+            //inisialisasi
+            bil = 0
+            jenis = ""
+
+            //input data bilangan
+            bil = prompt("INPUT BILANGAN BULAT : ")
+            bil = eval(bil)
+
+            //proses penentuan logika
+            if((bil % 2) == 1){
+                jenis = " Bilangan prima "
+            }
+            else if((bil % 2) == 0){
+                jenis = " Bilangan genap"
+            }
+            else{
+                jenis = "error"
+            }
+
+            //tampilkan hasil
+            document.write(" <br />Bilangan : "+bil + " adalah " +jenis)
+        </script>
+    </body>
+    
+</html>

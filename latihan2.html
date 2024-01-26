@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PEMILIHAN  : NESTED IF THEN ELSE</title>
+    </head>
+    <body>
+        <h1>Konstruksi pemilihan : nested if then else </h1>
+        <h2>itung gaji pegawai</h2>
+        <script>
+            var namapegawai, jammasuk, jamkeluar, jamlembur
+            var jamkerja, gapok, lembur, potongan, gaji
+
+            //inisialisasi variabel
+            jamkerja = 8
+            gapok = 100000
+            lembur = 2000
+            potongan = 1000
+            gaji = 0
+
+            //input
+            namapegawai = prompt("Nama Pegawai ")
+            jammasuk = prompt("Jam Masuk : ", "08.00")
+            jamkeluar = prompt("Jam Keluar : ", "16.00")
+            jamlembur = jamkeluar - eval(jammasuk) - eval(jamkerja)
+
+            //hitung lembur
+            if(jamlembur == 0){
+                gaji = gapok
+            }else{
+                if(jamlembur > 0){
+                    gaji = gapok + jamlembur * lembur
+                }else{
+                    jamkurang = jamlembur*-1
+                    gaji = gapok - jamkurang * potongan
+                }
+            }
+
+            //menampilkan hasil
+            document.write("Nama Pegawai : " +namapegawai)
+            document.write("<br />Jam Masuk : " +jammasuk)
+            document.write("<br />Jam Keluar : " +jamkeluar)
+            document.write("<br />Gaji : " +gaji)
+        </script>
+    </body>
+</html>

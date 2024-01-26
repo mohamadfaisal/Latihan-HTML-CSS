@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konstruksi pemilihan : switch</title>
+    </head>
+    <body>
+        <h1>Konstruksi pemilihan : switch</h1>
+        <h2>membilang angka</h2>
+        <script>
+            //deklarasi variabel
+            var bil, teks
+            
+            //inisialisasi variabel
+            bil = 0
+            teks = ""
+
+            //input data angka 
+            bil = prompt("Masukkan angka (0..9) : ")
+            bil = eval(bil)
+
+            //membilang angka
+            switch(bil){
+                case 0 :
+                    teks = "Nol"
+                    break
+                case 1 :
+                    teks = "Satu"
+                    break
+                case 2 : 
+                    teks = "Dua"
+                    break
+                case 3 : 
+                    teks = "Tiga"
+                    break
+                case 4 : 
+                    teks = "Empat"
+                    break
+                case 5 : 
+                    teks = "Lima"
+                    break
+                case 6 : 
+                    teks = "Enam"
+                    break
+                case 7 : 
+                    teks = "Tujuh"
+                    break
+                case 8 : 
+                    teks = "Delapan"
+                    break
+                case 9 : 
+                    teks = "Sembilan"
+                    break
+            }
+            //tampilkan hasil
+            document.write("<br />Angka diinput : "+bil)
+            document.write("<br />terbilang : " +teks)
+        </script>
+    </body>
+</html>

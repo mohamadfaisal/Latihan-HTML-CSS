@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PERHITUNGAN BPJS KETENAGAKERJAAN</title>
+    </head>
+        <h1>Perhitungan Jaminan Hari Tua</h1>
+        <body>
+            <style type="text/css">
+                .left    { text-align: left;}
+                .right   { text-align: right;}
+                .center  { text-align: center;}
+                .justify { text-align: justify;}
+             </style>
+            <script>
+            //deklarasi variabel
+            var iurantotal, iuranpekerja, iuranperusahaan
+            var perseniurantotal, perseniuranpekerja, perseniuranperusahaan
+            var gaji3, namapegawai
+
+            //inisialisasi variabel
+            perseniurantotal = 0.057
+            perseniuranpekerja = 0.02
+            perseniuranperusahaan = 0.037
+            gaji = 0
+
+            //input 
+            namapegawai = prompt("Nama Pegawai ")
+            gaji = prompt("Input Gaji : ")
+            gaji = eval(gaji)
+
+            //perhitungan
+            iurantotal = gaji * perseniurantotal
+            iuranpekerja = gaji * perseniuranpekerja
+            iuranperusahaan = gaji * perseniuranperusahaan
+
+            //tampilkan di layar
+            document.write(" Nama Pegawai = "+namapegawai)
+            document.write(" <br />Iuran Total : Rp."+iurantotal)
+            document.write(" <br />Iuran Pekerja : Rp. "+iuranpekerja)
+            document.write(" <br />Iuran Perusahaan : Rp. "+iuranperusahaan)
+            document.write(" <br />Gaji : Rp. "+gaji)
+
+        </script>
+
+        <head>
+            <title>PERHITUNGAN BPJS KETENAGAKERJAAN</title>
+        </head>
+        <h1>Perhitungan Jaminan Kecelakaan Kerja</h1>
+            <script>
+                //deklarasi variabel
+                var sangatrendah, rendah, sedang, tinggi, sangattinggi
+                var uangjkk, namapegawai1, gaji1
+                var resiko
+                
+                //inisialisasi variabel
+                uangjkk = 0
+                sangatrendah = 1
+                rendah = 2
+                sedang = 3
+                tinggi = 4
+                sangattinggi = 5
+    
+                //input 
+                namapegawai1 = prompt("Nama Pegawai : ")
+                gaji1 = prompt("Input Gaji : ")
+                resiko = prompt("Input Resiko : ")
+                gaji1 = eval(gaji1)
+    
+                //logika
+                if(resiko == 1){
+                    uangjkk = gaji1 * 0.0024
+                    //document.write("sangat rendah")
+                }
+                else if(resiko == 2){
+                    uangjkk = gaji1 * 0.0054
+                }
+                else if(resiko == 3){
+                    uangjkk = gaji1 * 0.0089
+                }
+                else if(resiko == 4){
+                    uangjkk = gaji1 * 0.0127
+                }
+                else if(resiko == 5){
+                    uangjkk = gaji1 * 0.0174
+                }
+    
+                //tampilkan
+                document.write(" Nama Pegawai : "+namapegawai1)
+                document.write("<br />Upah Program JKK : Rp. "+uangjkk)
+                document.write("<br />Resiko : "+resiko)
+                document.write("<br />Resiko 1 = Sangat Rendah")
+                document.write("<br />Resiko 2 = Rendah")
+                document.write("<br />Resiko 3 = Sedang")
+                document.write("<br />Resiko 4 = Tinggiharuha")
+                document.write("<br />Resiko 5 = Sangat Tinggi")
+                document.write("<br />Gaji : Rp. "+gaji1)
+            </script>             
+                <head>
+                     <title>PERHITUNGAN BPJS KETENAGAKERJAAN</title>
+                </head>
+                        <h1>Perhitungan Jaminan Kematian</h1>
+                    <script>
+                //deklrasai variabel
+                var namapegawai2, gaji2
+                var perseniurankematian, jaminankematian
+    
+                //inisialisasi variabel
+                gaji2 = 0
+                perseniurankematian = 0.003
+    
+                //input 
+                namapegawai2 = prompt("Nama Pegawai : ")
+                gaji2 = prompt("Input Gaji : ")
+                //resiko = prompt("Input Resiko : ")
+                gaji2 = eval(gaji2)
+    
+                //perhitungan
+                jaminankematian = gaji2 * perseniurankematian
+    
+                //tampilan
+                document.write("Nama Pegawai : "+namapegawai2)
+                document.write("<br />Iuran Jaminan Kematian : Rp. "+jaminankematian)
+                document.write("<br />Gaji : Rp. "+gaji2)
+            </script>
+
+        <head>
+            <title>PERHITUNGAN BPJS KETENAGAKERJAAN</title>
+        </head>
+            <h1>Perhitungan Jaminan Pensiun</h1>
+                <script>
+                    //deklarasi variabel
+                    var iuranjp, iuranjpperusahaan, iuranjppegawai
+                    var perseniuranjp, perseniuranjpperusahaan, perseniuranjppegawai
+                    var namapegawai3, gaji3
+        
+                    //inisialisasi variabel
+                    perseniuranjp = 0.03
+                    perseniuranjpperusahaan = 0.02
+                    perseniuranjppegawai = 0.01
+                    gaji3 = 0
+        
+                    //input
+                    namapegawai3 = prompt("Nama Pegawai : ")
+                    gaji3 = prompt("Input Gaji : ")
+                    gaji3 = eval(gaji3)
+        
+                    //perhitungan
+                    iuranjp = gaji3 * perseniuranjp
+                    iuranjpperusahaan = gaji3 * perseniuranjpperusahaan
+                    iuranjppegawai = gaji3 * perseniuranjppegawai
+        
+                    //tampilan
+                    document.write(" Nama Pegawai = "+namapegawai3)
+                    document.write(" <br />Iuran Jaminan Pensiun Total : Rp."+iuranjp)
+                    document.write(" <br />Iuran Pekerja : Rp. "+iuranjppegawai)
+                    document.write(" <br />Iuran Perusahaan : Rp. "+iuranjpperusahaan)
+                    document.write(" <br />Gaji : Rp. "+gaji3)
+                </script>
+     </body>
+</html>

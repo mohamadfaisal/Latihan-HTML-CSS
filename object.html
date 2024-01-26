@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="data"></div>
+<script>
+var Mobil = 
+{
+    nama:"Toyota", 
+    tipe:"Agya",
+    berat:600,
+    warna:"putih",
+    maju : function() {
+        return "Mulai Melaju";
+    },
+    mundur : function()
+    {
+        return "Mulai Mundur";
+    },
+    kiri : function() {
+        return "Belok Kiri";
+    },
+    kanan : function() {
+        return "Belok Kanan";
+    }
+}
+
+document.getElementById("data").innerHTML = Mobil.nama + " " + Mobil.tipe + " " + Mobil.maju() + " " + Mobil.mundur() + " " + Mobil.kanan() + " " +  Mobil.kiri();
+</script>
+</body>
+</html>
